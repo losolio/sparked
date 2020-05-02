@@ -23,7 +23,8 @@ function App() {
       <p>Patients</p>
       <ul>
         {patients.entry.map(item => (
-          <li>Name: </li>
+          <li>
+            {item.resource.name[0].family}</li>
         ))}
       </ul>
     </div>
